@@ -4,16 +4,21 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack serve --config webpack.dev.js",
-    "build": "npm run re:build && webpack",
+    "build": "npm run re:build && webpack --config webpack.prod.js",
     "re:dev": "rescript build -w",
     "re:build": "rescript"
   },
   "devDependencies": {
+    "css-loader": "^6.0.0",
     "html-webpack-plugin": "^5.3.2",
     "rescript": "^9.1.4",
+    "style-loader": "^3.1.0",
     "webpack": "^5.44.0",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "@rescript/react": "^0.10.3"
   }
 }

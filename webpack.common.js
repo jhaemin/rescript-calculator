@@ -2,7 +2,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 /** @type {import('webpack').Configuration} */
 const config = {
-  entry: './lib/js/src/main.bs.js',
+  entry: './src/main.bs.js',
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  },
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
