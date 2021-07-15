@@ -1,0 +1,3 @@
+*.html linguist-language=ReScript
+*.css linguist-language=ReScript
+*.js linguist-language=ReScript
