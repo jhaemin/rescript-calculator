@@ -1,0 +1,22 @@
+.pad {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  background-color: #444;
+  border-radius: 9999px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: background-color 1s ease;
+  user-select: none;
+}
+
+.pad:hover {
+  background-color: #777;
+  transition: none;
+}
+
+.pad:active {
+  background-color: #999;
+  transition: none;
+}
